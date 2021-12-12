@@ -11,6 +11,10 @@ LOCAL_PATH := $(call my-dir)
 PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr
 
+# Powerhint
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/aidl/power-libperfmgr/sdm660_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
