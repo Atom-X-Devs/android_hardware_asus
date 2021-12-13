@@ -7,6 +7,10 @@
 # Path
 LOCAL_PATH := $(call my-dir)
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.asus
+
 # Power HAL
 PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr
