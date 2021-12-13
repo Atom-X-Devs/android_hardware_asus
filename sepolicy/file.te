@@ -1,1 +1,5 @@
+# Power
 type pps_socket, file_type;
+
+# Powerstats
+type sysfs_power_stats, fs_type, sysfs_type;
